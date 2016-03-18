@@ -5,21 +5,23 @@ $(document).ready(function() {
         loop: true,
         grabCursor: false,
         simulateTouch: true,
-        onSwiperCreated: function(swiper){
-            $('[data-caption-animate]').each(function(){
-                var $toAnimateElement = $(this);
-                var toAnimateDelay = $(this).attr('data-caption-delay');
-                var toAnimateDelayTime = 0;
-                if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
-                if( !$toAnimateElement.hasClass('animated') ) {
-                    $toAnimateElement.addClass('not-animated');
-                    var elementAnimation = $toAnimateElement.attr('data-caption-animate');
-                    setTimeout(function() {
-                        $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
-                    }, toAnimateDelayTime);
-                }
-            });
-        },
+        onSlideChangeEnd: function(swiper){
+            var a = $('#slider').find('.swiper-slide-visible');
+            console.log($(a).attr('class'));
+            if ($(a).hasClass('slide-1')) {
+                $('#header').removeClass("dark");
+                $('#logo').find('img').each(function(){
+                    $(this).attr('src', 'img/icon@2x.png')
+                });
+            } else if ($(a).hasClass('slide-2')) {
+                $('#header').addClass("dark");
+                $('#logo').find('img').each(function(){
+                    $(this).attr('src', 'img/icon_light@2x.png')
+                });
+            }
+
+        }
+
     });
 
     $('#slider-arrow-left').on('click', function(e){
@@ -33,4 +35,28 @@ $(document).ready(function() {
     });
 
 
+    $('#email-submit-btn').on('click', function(e) {
+        var emailTemp = $("#mc-embedded-subscribe-form").validate();
+        var emailValid = emailTemp.valid();
+        var emailValue = $("input[name='EMAIL']").val();
+        if (emailValue != "" && emailValid)  {
+            alert("ok");
+            createEmailFile(emailValue);
+        }
+    });
+
 });
+
+function createEmailFile(email) {
+    $.ajax({
+        type: 'POST',
+        data: {email: email},
+        url: 'getEmail.php',
+        success: function(data) {
+            alert('file saved');
+        },
+        error: function() {
+            alert('error');
+        }
+    });
+}
