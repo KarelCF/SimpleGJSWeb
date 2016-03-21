@@ -1,3 +1,7 @@
+AV.initialize('Ci7A1vL38yoHrI53zAJtEkDP-gzGzoHsz', 'EJww4luyde0wRb0fs8XrS3GA');
+var Email = AV.Object.extend('Email');
+var email = new Email();
+
 $(document).ready(function() {
 
     var swiperSlider = $('.swiper-container').swiper({
@@ -36,27 +40,23 @@ $(document).ready(function() {
 
 
     $('#email-submit-btn').on('click', function(e) {
-        var emailTemp = $("#mc-embedded-subscribe-form").validate();
-        var emailValid = emailTemp.valid();
-        var emailValue = $("input[name='EMAIL']").val();
-        if (emailValue != "" && emailValid)  {
-            alert("ok");
-            createEmailFile(emailValue);
-        }
+        $("#mc-embedded-subscribe-form").validate({
+            submitHandler: function(form) {
+                var emailValue = $("input[name='EMAIL']").val();
+                if (emailValue != "")  {
+                    saveEmail(emailValue);
+                    form.submit();
+                }
+            }
+        });
+
     });
 
 });
 
-function createEmailFile(email) {
-    $.ajax({
-        type: 'POST',
-        data: {email: email},
-        url: 'getEmail.php',
-        success: function(data) {
-            alert('file saved');
-        },
-        error: function() {
-            alert('error');
-        }
+function saveEmail(emailValue) {
+    email.set('email', emailValue);
+    email.save(function(err) {
+        console.log('save email failed');
     });
 }

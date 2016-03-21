@@ -104,6 +104,10 @@
     right: 0px;
 }
 
+#local-subscribe-form {
+    display: none;
+}
+
 .widget_links p {
     margin: 0 0 10px !important;
     padding-left: 12px;
