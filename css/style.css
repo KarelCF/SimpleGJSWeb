@@ -3501,10 +3501,8 @@ body:not(.device-touch) #portfolio {
 }
 
 .portfolio-item {
-	position: relative;
-	float: left;
-	width: 276px;
-	margin: 0 12px 12px 0;
+	width: 40%;
+	margin: 120px auto 80px;
 }
 
 .portfolio-notitle .portfolio-item,
@@ -3519,8 +3517,7 @@ body:not(.device-touch) #portfolio {
 .portfolio-item .portfolio-image a,
 .portfolio-item .portfolio-image img {
 	display: block;
-	width: 276px;
-	height: 207px;
+	width: 100%;
 }
 
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-notitle .portfolio-image img {
@@ -4567,7 +4564,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-overlay {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	background-color: #4A90E2;
+	background-color: #FFFFFF;
 	width: 100px !important;
 	height: 40px !important;
 	margin: -28px 0 0 -44px;
@@ -4611,7 +4608,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-overlay a {
 
 .portfolio-overlay a:hover {
 	color: #1ABC9C;
-	background-color: #136BD1;
+	background-color: #ffffff;
 }
 
 .portfolio-item:hover .portfolio-overlay a.left-icon,
