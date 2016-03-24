@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 
     <title>GJS - An Amazing Robot for Battle</title>
@@ -45,7 +45,7 @@
 
 <div id="wrapper" class="clearfix">
 
-    <!-- Í·²¿Çø -->
+    <!-- Í·ï¿½ï¿½ï¿½ï¿½ -->
     <header id="header" class="transparent-header">
 
         <div id="header-wrap">
@@ -75,7 +75,7 @@
     </header>
 
 
-    <!-- ¹ö¶¯Çø -->
+    <!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -->
     <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
         <div class="swiper-container">
             <div class="swiper-wrapper">
