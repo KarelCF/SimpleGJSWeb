@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+        $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    ?>
 
     <title>GJS - An Amazing Robot for Battle</title>
     <meta name="keywords" content="GJS, robot, battle robot, armor robot, fighting robot">
@@ -27,7 +30,6 @@
     <script type="text/javascript" src="http://7xs5ai.com1.z0.glb.clouddn.com/plugins.js"></script>
     <script type="text/javascript" src="asset/js/main.js"></script>
 	<?php
-		$locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 		if ($locale == "zh") {
 	?>
 	
@@ -131,37 +133,20 @@
                 </div>
             </div>
 
-            <!--<div class="video-area">-->
-                <!--<iframe width="380" height="213" src="http://www.youtube.com/embed/SZEflIVnhH8" frameborder="0" allowfullscreen></iframe>-->
-            <!--</div>-->
+            <div class="video-area">
+                <?php
+                    if ($locale == "zh") {
+                ?>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yrP1RgmX_Uw" frameborder="0" allowfullscreen></iframe>
+                <?php
+                    } else {
+                ?>
+                        <embed src="http://player.youku.com/player.php/sid/XMTUxMDc1MjU2NA==/v.swf" allowFullScreen="true" quality="high" width="560" height="315" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                <?php
+                    }
+                ?>
 
-            <article class="portfolio-item pf-graphics pf-illustrations clearfix ">
-                <div class="portfolio-image">
-                    <div class="fslider" data-arrows="false">
-                        <div class="flexslider">
-                            <div class="slider-wrap">
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_1.jpg" ></a></div>
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_6.jpg" ></a></div>
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_2.jpg" ></a></div>
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_3.jpg" ></a></div>
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_4.jpg" ></a></div>
-                                <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_5.jpg" ></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-overlay" data-lightbox="gallery">
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_1.jpg" class="left-icon" data-lightbox="gallery-item">
-                            <i class="icon-line-stack-2"></i>
-                        </a>
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_6.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_2.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_3.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_4.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                        <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_5.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                    </div>
-                </div>
-            </article>
-
+            </div>
 
         <div class="robot-section-2 clearfix">
 
