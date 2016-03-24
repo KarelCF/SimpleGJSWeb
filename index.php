@@ -26,7 +26,18 @@
     <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.4.js"></script>
     <script type="text/javascript" src="http://7xs5ai.com1.z0.glb.clouddn.com/plugins.js"></script>
     <script type="text/javascript" src="asset/js/main.js"></script>
-
+	<?php
+		$locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+		if ($locale == "zh") {
+	?>
+	
+	<?php 
+		} else {
+	?>
+		
+	<?php 
+		}
+	?>
 
 </head>
 
@@ -34,7 +45,7 @@
 
 <div id="wrapper" class="clearfix">
 
-    <!-- å¤´éƒ¨åŒº -->
+    <!-- Í·²¿Çø -->
     <header id="header" class="transparent-header">
 
         <div id="header-wrap">
@@ -64,7 +75,7 @@
     </header>
 
 
-    <!-- æ»šåŠ¨åŒº -->
+    <!-- ¹ö¶¯Çø -->
     <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -195,17 +206,12 @@
 
             <div class="col_full center topmargin nobottommargin">
 
-                <a href="#" class="social-icon si-facebook si-large si-rounded si-colored inline-block" title="Facebook">
+                <a href="https://www.facebook.com/GJS-ROBOT-672568892885563/" class="social-icon si-facebook si-large si-rounded si-colored inline-block" title="Facebook">
                     <i class="icon-facebook"></i>
                     <i class="icon-facebook"></i>
                 </a>
 
-                <a href="#" class="social-icon si-twitter si-large si-rounded si-colored inline-block" title="Twitter">
-                    <i class="icon-twitter"></i>
-                    <i class="icon-twitter"></i>
-                </a>
-
-                <a href="#" class="social-icon si-youtube si-large si-rounded si-colored inline-block" title="Youtube">
+                <a href="https://www.youtube.com/channel/UCv5j-hiXiBW5ZOkyAVOMWZQ" class="social-icon si-youtube si-large si-rounded si-colored inline-block" title="Youtube">
                     <i class="icon-youtube"></i>
                     <i class="icon-youtube"></i>
                 </a>
