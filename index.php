@@ -29,14 +29,38 @@
     <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.4.js"></script>
     <script type="text/javascript" src="http://7xs5ai.com1.z0.glb.clouddn.com/plugins.js"></script>
     <script type="text/javascript" src="asset/js/main.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-75128097-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 	<?php
-		if ($locale == "zh") {
+		if ($locale != "zh") {
 	?>
-	
-	<?php 
+            <script>
+                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '184179018634721');
+                fbq('track', "PageView");
+            </script>
+            <noscript>
+                <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=184179018634721&ev=PageView&noscript=1"/>
+            </noscript>
+	<?php
 		} else {
 	?>
-		
+
 	<?php 
 		}
 	?>
@@ -47,7 +71,6 @@
 
 <div id="wrapper" class="clearfix">
 
-    <!-- ͷ���� -->
     <header id="header" class="transparent-header">
 
         <div id="header-wrap">
@@ -76,8 +99,6 @@
 
     </header>
 
-
-    <!-- ������ -->
     <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
         <div class="swiper-container">
             <div class="swiper-wrapper">
