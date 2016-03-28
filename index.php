@@ -65,7 +65,9 @@
 
 
                 <div id="mobile-preorder-btn">
-                    <img class="mobile-preorder-btn" src="asset/img/btn.png" />
+                    <a href="#mc-embedded-subscribe-form">
+                        <img class="mobile-preorder-btn" src="asset/img/img_btn_preorder_small.png" />
+                    </a>
                 </div>
 
                 <!-- logo -->
@@ -142,7 +144,7 @@
 
             <div class="video-area">
                 <?php
-                if ($locale == "zh") {
+                if ($locale != "zh") {
                     ?>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/yrP1RgmX_Uw" frameborder="0" allowfullscreen></iframe>
                     <?php
