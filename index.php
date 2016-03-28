@@ -30,9 +30,9 @@
     <script type="text/javascript" src="http://7xs5ai.com1.z0.glb.clouddn.com/plugins.js"></script>
     <script type="text/javascript" src="asset/js/main.js"></script>
 
-	<?php
-		if ($locale != "zh") {
-	?>
+    <?php
+        if ($locale != "zh") {
+    ?>
             <script>
                 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -46,13 +46,10 @@
             <noscript>
                 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=184179018634721&ev=PageView&noscript=1"/>
             </noscript>
-	<?php
-		} else {
-	?>
 
-	<?php 
-		}
-	?>
+    <?php
+        }
+    ?>
 
 </head>
 
@@ -131,7 +128,7 @@
     <section id="content">
 
         <div class="robot-section-1 clearfix">
-            
+
             <div class="section-1-bg">
                 <img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_bg_section_1.png">
             </div>
@@ -145,75 +142,75 @@
 
             <div class="video-area">
                 <?php
-                    if ($locale == "zh") {
-                ?>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yrP1RgmX_Uw" frameborder="0" allowfullscreen></iframe>
-                <?php
-                    } else {
-                ?>
-                        <embed src="http://player.youku.com/player.php/sid/XMTUxMDc1MjU2NA==/v.swf" allowFullScreen="true" quality="high" width="560" height="315" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-                <?php
-                    }
+                if ($locale == "zh") {
+                    ?>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yrP1RgmX_Uw" frameborder="0" allowfullscreen></iframe>
+                    <?php
+                } else {
+                    ?>
+                    <embed src="http://player.youku.com/player.php/sid/XMTUxMDc1MjU2NA==/v.swf" allowFullScreen="true" quality="high" width="560" height="315" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                    <?php
+                }
                 ?>
 
             </div>
 
-        <div class="robot-section-2 clearfix">
+            <div class="robot-section-2 clearfix">
 
-            <div class="row topmargin-lg leftmargin-sm rightmargin-sm robot-section-title">
-                <div class="center">
-                    <p>Simple, Fast, Smooth</p>
+                <div class="row topmargin-lg leftmargin-sm rightmargin-sm robot-section-title">
+                    <div class="center">
+                        <p>Simple, Fast, Smooth</p>
                     <span class="divcenter">Use the Ganker APP to control the robot.<br/>
                     The robot contains 9 servo motors, so you can customize hundreds of actions and skills.</span>
+                    </div>
                 </div>
+
+                <div class="phone-container">
+                    <div class="center allmargin-lg img-phone-area" >
+                        <img class="img-phone-1" src="http://7xqzjr.com1.z0.glb.clouddn.com/img_phone_1.png" >
+                        <img class="img-phone-2" src="http://7xqzjr.com1.z0.glb.clouddn.com/img_phone_2.png" >
+                    </div>
+                </div>
+
             </div>
 
-            <div class="phone-container">
-                <div class="center allmargin-lg img-phone-area" >
-                    <img class="img-phone-1" src="http://7xqzjr.com1.z0.glb.clouddn.com/img_phone_1.png" >
-                    <img class="img-phone-2" src="http://7xqzjr.com1.z0.glb.clouddn.com/img_phone_2.png" >
+            <div class="robot-section-3 clearfix">
+
+                <div class="row topmargin-sm leftmargin-sm rightmargin-sm robot-section-title">
+                    <div class="center">
+                        <p>More Information</p>
+                        <span class="divcenter">If you're willing to have one, subscribe to our newsletter to get Important News, Amazing Offers & Inside Scoops:</span>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-
-        <div class="robot-section-3 clearfix">
-
-            <div class="row topmargin-sm leftmargin-sm rightmargin-sm robot-section-title">
-                <div class="center">
-                    <p>More Information</p>
-                    <span class="divcenter">If you're willing to have one, subscribe to our newsletter to get Important News, Amazing Offers & Inside Scoops:</span>
-                </div>
-            </div>
-
-            <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="//icemoka.us13.list-manage.com/subscribe/post?u=be0bb0966db9a10b062d6a572&amp;id=0e37550ebf" role="form" method="post" class="nobottommargin">
-                <div class="input-group input-group-lg divcenter" style="max-width:600px;">
-                    <span class="input-group-addon"><i class="icon-email2"></i></span>
-                    <input type="email" name="EMAIL" class="form-control required email" placeholder="Enter your Email" value="">
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be0bb0966db9a10b062d6a572_0e37550ebf" tabindex="-1" value=""></div>
+                <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="//icemoka.us13.list-manage.com/subscribe/post?u=be0bb0966db9a10b062d6a572&amp;id=0e37550ebf" role="form" method="post" class="nobottommargin">
+                    <div class="input-group input-group-lg divcenter" style="max-width:600px;">
+                        <span class="input-group-addon"><i class="icon-email2"></i></span>
+                        <input type="email" name="EMAIL" class="form-control required email" placeholder="Enter your Email" value="">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be0bb0966db9a10b062d6a572_0e37550ebf" tabindex="-1" value=""></div>
                     <span class="input-group-btn">
                         <button id="email-submit-btn" class="btn btn-success" type="submit">SUBMIT</button>
                     </span>
+                    </div>
+                </form>
+
+                <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
+
+                <div class="col_full center topmargin nobottommargin">
+
+                    <a href="https://www.facebook.com/GJS-ROBOT-672568892885563/" class="social-icon si-facebook si-large si-rounded si-colored inline-block" title="Facebook">
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCv5j-hiXiBW5ZOkyAVOMWZQ" class="social-icon si-youtube si-large si-rounded si-colored inline-block" title="Youtube">
+                        <i class="icon-youtube"></i>
+                        <i class="icon-youtube"></i>
+                    </a>
+
                 </div>
-            </form>
-
-            <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
-
-            <div class="col_full center topmargin nobottommargin">
-
-                <a href="https://www.facebook.com/GJS-ROBOT-672568892885563/" class="social-icon si-facebook si-large si-rounded si-colored inline-block" title="Facebook">
-                    <i class="icon-facebook"></i>
-                    <i class="icon-facebook"></i>
-                </a>
-
-                <a href="https://www.youtube.com/channel/UCv5j-hiXiBW5ZOkyAVOMWZQ" class="social-icon si-youtube si-large si-rounded si-colored inline-block" title="Youtube">
-                    <i class="icon-youtube"></i>
-                    <i class="icon-youtube"></i>
-                </a>
 
             </div>
-
-        </div>
 
     </section>
 
