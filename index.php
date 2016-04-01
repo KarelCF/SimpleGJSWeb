@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <?php
         $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
@@ -31,24 +31,23 @@
     <script type="text/javascript" src="asset/js/main.js"></script>
 
     <?php
-        if ($locale != "zh") {
+    if ($locale != "zh") {
     ?>
-            <script>
-                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-                    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-                    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-                    document,'script','//connect.facebook.net/en_US/fbevents.js');
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-                fbq('init', '184179018634721');
-                fbq('track', "PageView");
-            </script>
-            <noscript>
-                <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=184179018634721&ev=PageView&noscript=1"/>
-            </noscript>
-
+        fbq('init', '212119322494914');
+        fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=212119322494914&ev=PageView&noscript=1"
+        /></noscript>
     <?php
-        }
+    }
     ?>
 
 </head>
@@ -64,21 +63,28 @@
             <div class="container clearfix">
 
 
-                <div id="mobile-preorder-btn">
-                    <a href="#mc-embedded-subscribe-form">
-                        <img class="mobile-preorder-btn" src="asset/img/img_btn_preorder_small.png" />
-                    </a>
-                </div>
-
                 <!-- logo -->
                 <div id="logo">
-                    <a href="index.html" class="standard-logo">
+                    <a href="_index.html" class="standard-logo">
                         <img src="img/icon.png">
                     </a>
-                    <a href="index.html" class="retina-logo">
+                    <a href="_index.html" class="retina-logo">
                         <img src="img/icon@2x.png">
                     </a>
                 </div>
+
+                <nav id="primary-menu">
+                    <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="//icemoka.us13.list-manage.com/subscribe/post?u=be0bb0966db9a10b062d6a572&amp;id=0e37550ebf" role="form" method="post" class="nobottommargin">
+                        <div class="input-group input-group-lg divcenter" style="max-width:600px;">
+                            <span class="input-group-addon"><i class="icon-email2"></i></span>
+                            <input type="email" name="EMAIL" class="form-control required email" placeholder="Enter Your Email to Be Notified First" value="">
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be0bb0966db9a10b062d6a572_0e37550ebf" tabindex="-1" value=""></div>
+                            <span class="input-group-btn">
+                                <button id="email-submit-btn" class="btn btn-success" type="submit">SUBMIT</button>
+                            </span>
+                        </div>
+                    </form>
+                </nav>
 
 
             </div>
@@ -142,20 +148,23 @@
                 </div>
             </div>
 
-            <div class="video-area">
-                <?php
-                if ($locale != "zh") {
-                    ?>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yrP1RgmX_Uw" frameborder="0" allowfullscreen></iframe>
-                    <?php
-                } else {
-                    ?>
+            <?php
+            if ($locale != "zh") {
+            ?>
+                <div class="video-area">
                     <embed src="http://player.youku.com/player.php/sid/XMTUxMDc1MjU2NA==/v.swf" allowFullScreen="true" quality="high" width="560" height="315" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-                    <?php
-                }
-                ?>
+                </div>
+            <?php
+            } else {
+            ?>
+                <div class="video-area">
+                    <embed src="http://player.youku.com/player.php/sid/XMTUxMDc1MjU2NA==/v.swf" allowFullScreen="true" quality="high" width="560" height="315" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                </div>
+            <?php
+            }
+            ?>
 
-            </div>
+
 
             <div class="robot-section-2 clearfix">
 
@@ -178,23 +187,38 @@
 
             <div class="robot-section-3 clearfix">
 
-                <div class="row topmargin-sm leftmargin-sm rightmargin-sm robot-section-title">
+                <div class="row leftmargin-sm rightmargin-sm robot-section-title">
                     <div class="center">
-                        <p>More Information</p>
-                        <span class="divcenter">If you're willing to have one, subscribe to our newsletter to get Important News, Amazing Offers & Inside Scoops:</span>
+                        <p>Gallery</p>
                     </div>
                 </div>
 
-                <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="//icemoka.us13.list-manage.com/subscribe/post?u=be0bb0966db9a10b062d6a572&amp;id=0e37550ebf" role="form" method="post" class="nobottommargin">
-                    <div class="input-group input-group-lg divcenter" style="max-width:600px;">
-                        <span class="input-group-addon"><i class="icon-email2"></i></span>
-                        <input type="email" name="EMAIL" class="form-control required email" placeholder="Enter your Email" value="">
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be0bb0966db9a10b062d6a572_0e37550ebf" tabindex="-1" value=""></div>
-                    <span class="input-group-btn">
-                        <button id="email-submit-btn" class="btn btn-success" type="submit">SUBMIT</button>
-                    </span>
+                <article class="portfolio-item pf-graphics pf-illustrations clearfix ">
+                    <div class="portfolio-image">
+                        <div class="fslider" data-arrows="false">
+                            <div class="flexslider">
+                                <div class="slider-wrap">
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_1.jpg" ></a></div>
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_6.jpg" ></a></div>
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_2.jpg" ></a></div>
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_3.jpg" ></a></div>
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_4.jpg" ></a></div>
+                                    <div class="slide"><a href="portfolio-single-gallery.html"><img src="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_5.jpg" ></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay" data-lightbox="gallery">
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_1.jpg" class="left-icon" data-lightbox="gallery-item">
+                                <i class="icon-line-stack-2"></i>
+                            </a>
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_6.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_2.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_3.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_4.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                            <a href="http://7xs5ai.com1.z0.glb.clouddn.com/img_robot_5.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                        </div>
                     </div>
-                </form>
+                </article>
 
                 <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
 
