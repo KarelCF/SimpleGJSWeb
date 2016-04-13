@@ -52,7 +52,8 @@
 
 </head>
 
-<body class="stretched"><?php include_once("analyticstracking.php") ?>
+<body class="stretched">
+<?php //include_once("analyticstracking.php") ?>
 
 <div id="wrapper" class="clearfix">
 
@@ -102,11 +103,11 @@
                         <div class="slider-caption slider-caption-center">
                             <img class="title-img" data-caption-animate="fadeInUp" src="asset/img/img_title_dark@2x.png" />
                         </div>
-                        <div class="slider-caption slider-caption-center">
-                            <a href="#mc-embedded-subscribe-form">
-                                <img class="preorder-btn" data-caption-animate="fadeInUp" src="asset/img/img_btn_preorder.png" />
-                            </a>
-                        </div>
+<!--                        <div class="slider-caption slider-caption-center">-->
+<!--                            <a href="#mc-embedded-subscribe-form">-->
+<!--                                <img class="preorder-btn" data-caption-animate="fadeInUp" src="asset/img/img_btn_preorder.png" />-->
+<!--                            </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
 
@@ -115,11 +116,11 @@
                         <div class="slider-caption slider-caption-center">
                             <img class="title-img" data-caption-animate="fadeInUp" src="asset/img/img_title_light@2x.png" />
                         </div>
-                        <div class="slider-caption slider-caption-center">
-                            <a href="#mc-embedded-subscribe-form">
-                                <img class="preorder-btn" data-caption-animate="fadeInUp" src="asset/img/img_btn_preorder.png" />
-                            </a>
-                        </div>
+<!--                        <div class="slider-caption slider-caption-center">-->
+<!--                            <a href="#mc-embedded-subscribe-form">-->
+<!--                                <img class="preorder-btn" data-caption-animate="fadeInUp" src="asset/img/img_btn_preorder.png" />-->
+<!--                            </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
 
